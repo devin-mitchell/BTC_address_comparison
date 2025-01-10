@@ -10,7 +10,7 @@ export function AddressInput({ onChange, value, inputName, labelText, ...props }
     <div className="flex items-center">
       <label
         htmlFor={inputName}
-        className="flex rounded-l-lg cursor-pointer border-2 border-blue-500 border-r-0 items-center bg-blue-500 text-gray-100 px-3 py-1.5 text-s font-medium text-gray-900"
+        className="flex rounded-l-lg cursor-pointer border-2 border-orange-500 border-r-0 items-center bg-orange-500 text-gray-100 px-3 py-1.5 text-s font-medium text-gray-900"
       >
         {labelText}
       </label>
