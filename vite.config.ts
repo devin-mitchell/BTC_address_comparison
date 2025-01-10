@@ -9,5 +9,14 @@ export default defineConfig({
     postcss: {
       plugins: [tailwindcss()],
     },
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://api.blockcypher.com/v1/btc/main',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      },
+    },
   }
 })

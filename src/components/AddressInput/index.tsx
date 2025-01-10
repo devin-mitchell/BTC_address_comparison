@@ -10,7 +10,7 @@ export function AddressInput({ onChange, value, inputName, labelText, ...props }
     <div className="flex items-center">
       <label
         htmlFor={inputName}
-        className="mx-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-300 px-3 py-1.5 text-s font-medium text-gray-600"
+        className="flex rounded-l-lg cursor-pointer border-2 border-blue-500 border-r-0 items-center bg-blue-500 text-gray-100 px-3 py-1.5 text-s font-medium text-gray-900"
       >
         {labelText}
       </label>
@@ -22,9 +22,9 @@ export function AddressInput({ onChange, value, inputName, labelText, ...props }
           name={inputName}
           value={value}
           type="text"
-          className=" rounded px-3 py-1.5 pl-8 relative cursor-pointer border-gray-300 bg-gray-300 text-gray-600 focus:ring-2"
+          className="border-2 rounded-r-lg border-gray-900 px-3 py-1.5 pl-8 relative bg-gray-300 text-gray-600 focus:ring-2"
         />
-        <FaBitcoin className="absolute text-orange-500 w-5 h-5 top-[8px] left-1 " />
+        <FaBitcoin className="absolute text-orange-500 w-5 h-5 top-[10px] left-2 " />
       </div>
     </div>
   )
